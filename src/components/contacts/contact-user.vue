@@ -8,7 +8,8 @@
     </div>
     <div
         class="user__status"
-        :class="{ 'online': contact_data.status === 'online', 'offline': contact_data.status === 'offline' }"
+        :class="{ 'online': contact_data.status === 'online',
+                 'offline': contact_data.status === 'offline' }"
     ></div>
   </div>
 </template>
