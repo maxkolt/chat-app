@@ -14,7 +14,7 @@
   margin-top: 100px;
 }
 
-.v-main-wrapper {
+.main-wrapper {
   padding: $spacer*2;
   max-width: 400px;
   margin: 0 auto;
@@ -62,7 +62,7 @@
   }
 }
 
-.v-contact-user {
+.contact-user {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -155,7 +155,7 @@
   }
 }
 
-.v-user-chat {
+.user-chat {
   margin-bottom: 200px;
   .input__field {
     display: flex;

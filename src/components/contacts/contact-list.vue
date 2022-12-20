@@ -1,10 +1,38 @@
 <template>
-<div></div>
+<div class="contact-list">
+  <contact-user
+      v-for="contact in contacts"
+      :key="contact.id"
+      :contact_data="contact"
+      @to-contact-info="toContactInfo(contact)"
+  />
+</div>
 </template>
 
 <script>
+
+import contactUser from './contact-user.vue'
+import {mapActions, mapState} from "vuex";
+
 export default {
-  name: "contact-list"
+  name: 'contact-list',
+  components: {
+    contactUser
+  },
+  computed: {
+    ...mapState([
+      'contacts'
+    ])
+  },
+  methods: {
+    ...mapActions([
+      'FETCH_CONTACTS',
+      'SET_USER_TO_HEADER'
+    ]),
+  },
+  mounted() {
+    this.FETCH_CONTACTS()
+  }
 }
 </script>
 

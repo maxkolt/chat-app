@@ -2,12 +2,14 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 Vue.use(Router);
+import contactList from '../components/contacts/contact-list.vue'
 
 let router = new Router({
   routes: [
     {
       path:'/',
-      name: 'contacts'
+      name: 'contacts',
+      component: contactList
     }
   ]
 })
