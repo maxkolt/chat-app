@@ -14,7 +14,7 @@
 import {mapActions} from 'vuex'
 
 export default {
-  name: "v-user-list-item",
+  name: "user-list-item",
   props: {
     user_data: {
       type: Object,

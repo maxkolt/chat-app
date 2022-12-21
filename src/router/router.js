@@ -6,6 +6,7 @@ Vue.use(Router);
 import contactList from '../components/contacts/contact-list.vue'
 import contactUserInfo from '../components/contacts/contact-user-info.vue'
 import usersList from '../components/users/users-list.vue'
+import userChat from '../components/users/chat/user-chat.vue'
 
 let router = new Router({
   routes: [
@@ -24,6 +25,12 @@ let router = new Router({
       name: 'chats',
       component: usersList
     },
+    {
+      path: '/user',
+      name: 'user',
+      component: userChat,
+      props: true
+    }
   ]
 })
 

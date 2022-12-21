@@ -42,6 +42,12 @@ let store = new Vuex.Store({
     SET_USER_TO_HEADER({commit}, user) {
       commit('SET_USER_TO_HEAD', user)
     },
+    SEND_MSG_TO_CHAT({commit}, {userId, user}) {
+      return axios.put('http://localhost:3000/chats/' + userId, user)
+        .then((response) => {
+          return response;
+        })
+    }
   }
 })
 
