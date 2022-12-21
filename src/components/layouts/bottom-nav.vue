@@ -1,5 +1,5 @@
 <template>
-  <div class='v-bottom-nav'>
+  <div class='bottom-nav'>
     <router-link :to="{name: 'contacts'}">
       <i class="material-icons">person_pin</i>
     </router-link>
@@ -20,7 +20,7 @@
 
 <script>
 export default {
-  name: "v-bottom-nav",
+  name: "bottom-nav",
   props: {},
   data() {
     return {}

@@ -8,8 +8,10 @@
       <i class="material-icons">keyboard_arrow_left</i>
       <span>Back</span>
     </div>
-    <div class="v-header__user-info" v-if="!isCoreRoute">
-      <span>{{currentUserChat.name}}</span>
+    <div
+        class="v-header__user-info"
+        v-if="!isCoreRoute">
+      <span>{{currentUserChat}}</span>
     </div>
     <div class="right-side"></div>
   </div>
