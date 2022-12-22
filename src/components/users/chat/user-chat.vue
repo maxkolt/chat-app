@@ -8,7 +8,7 @@
     <div class="input__field">
       <input
           type="text"
-          class="v-user-chat__textfield"
+          class="user-chat__textfield"
           v-model="textValue"
           @keypress.enter="sendMessage"
       >

@@ -11,7 +11,7 @@
     <div
         class="v-header__user-info"
         v-if="!isCoreRoute">
-      <span>{{currentUserChat}}</span>
+      <span>{{currentUserChat.name}}</span>
     </div>
     <div class="right-side"></div>
   </div>

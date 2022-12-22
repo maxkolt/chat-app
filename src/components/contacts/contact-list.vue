@@ -34,7 +34,7 @@ export default {
         name: 'contact',
         query: {'id': contact.id}
       })
-          this.SET_USER_TO_HEADER(contact.name)
+          this.SET_USER_TO_HEADER(contact)
     }
   },
   mounted() {
@@ -43,5 +43,5 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style>
 </style>

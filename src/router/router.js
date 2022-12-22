@@ -18,7 +18,8 @@ let router = new Router({
     {
       path: '/contact',
       name: 'contact',
-      component: contactUserInfo
+      component: contactUserInfo,
+      props: true
     },
     {
       path: '/chats',
