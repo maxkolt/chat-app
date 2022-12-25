@@ -6,6 +6,7 @@ Vue.use(Vuex);
 
 let store = new Vuex.Store({
   state: {
+    isAuth: true,
     contacts: [],
     chats: [],
     currentUserChat: {}

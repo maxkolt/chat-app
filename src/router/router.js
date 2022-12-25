@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import store from '../vuex/store'
 
 Vue.use(Router);
 
@@ -33,6 +34,11 @@ let router = new Router({
       props: true
     }
   ]
+})
+
+router.beforeEach((to, from, next) => {
+  if (!store.state.isAuth && to.name === 'contact') alert('Не авторизован!')
+  else next ()
 })
 
 export default router;
